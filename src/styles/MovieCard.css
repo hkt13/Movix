@@ -1,0 +1,63 @@
+.movie-card{
+    width: calc(50% - 11px);
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 768px)
+{.movie-card {
+    width: calc(25% - 15px);
+}
+}
+
+@media only screen and (min-width: 1024px)
+{.movie-card {
+    width: calc(20% - 16px);
+}
+}
+
+
+.movie-card .poster{
+    margin-bottom: 20px;
+    width: 100%;
+    aspect-ratio: 1/1.5;
+}
+
+.movie-card .poster img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.movie-card .txtblock {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card .txtblock .title{
+
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 768px)
+{  .movie-card .txtblock .title {
+    font-size: 20px;
+}
+}
+
+.movie-card .txtblock .date {
+    font-size: 14px;
+    opacity: .5;
+}
+
+.lazy-load-image-background{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
